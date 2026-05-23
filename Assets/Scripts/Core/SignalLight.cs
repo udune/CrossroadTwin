@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class SignalLight : MonoBehaviour
 {
-    [SerializeField] private Renderer lightRenderer;
+    public Renderer lightRenderer;
 
     [Header("Colors")]
-    [SerializeField] private Color colorOn = Color.white;
-    [SerializeField] private Color colorOff = new Color(0.1f, 0.1f, 0.1f);
+    public Color colorOn = Color.white;
+    public Color colorOff = new Color(0.1f, 0.1f, 0.1f);
 
     private Material instanceMaterial;
     private static readonly int EmissionColorProperty = Shader.PropertyToID("_EmissionColor");

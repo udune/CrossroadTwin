@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class VehicleSignal : MonoBehaviour
 {
-    [SerializeField] private SignalLight lightRed;
-    [SerializeField] private SignalLight lightYellow;
-    [SerializeField] private SignalLight lightGreen;
-    [SerializeField] private SignalLight lightLeftArrow;
+    public SignalLight lightRed;
+    public SignalLight lightYellow;
+    public SignalLight lightGreen;
+    public SignalLight lightLeftArrow;
 
     public void SetRed()
     {

@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PedestrianSignal : MonoBehaviour
 {
-    [SerializeField] private SignalLight lightRed;
-    [SerializeField] private SignalLight lightGreen;
+    public SignalLight lightRed;
+    public SignalLight lightGreen;
 
     public void SetRed()
     {
