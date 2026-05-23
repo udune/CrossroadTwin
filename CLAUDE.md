@@ -360,8 +360,8 @@ ScriptableObj: PascalCase      (SignalConfig)
 | 단계 | 내용 | 상태 |
 |------|------|------|
 | STEP 1 | 프로젝트 세팅 | ✅ 완료 |
-| STEP 2 | 3D 씬 제작 | ⬜ 대기 |
-| STEP 3 | ScriptableObject 설계 | ⬜ 대기 |
+| STEP 2 | 3D 씬 제작 | 🔄 진행 중 |
+| STEP 3 | ScriptableObject 설계 | ✅ 완료 |
 | STEP 4 | 핵심 로직 (시뮬레이션) | ⬜ 대기 |
 | STEP 5 | UI 제작 | ⬜ 대기 |
 | STEP 6 | SLMP 통신 구현 | ⬜ 대기 |
@@ -369,6 +369,33 @@ ScriptableObj: PascalCase      (SignalConfig)
 | STEP 8 | 차량/보행자 애니메이션 | ⬜ 대기 |
 | STEP 9 | 연동 테스트 | ⬜ 대기 |
 | STEP 10 | 마무리 및 빌드 | ⬜ 대기 |
+
+---
+
+## 17. 생성된 스크립트 목록
+
+### Core (신호 제어)
+```
+Assets/Scripts/Core/
+├── SignalConfig.cs          ScriptableObject - 타이밍/통신 설정
+├── SignalLight.cs           단일 LED 제어 (색상 + Emission)
+├── PedestrianSignal.cs      보행자 신호등 제어 (적색/녹색)
+└── VehicleSignal.cs         차량 신호등 제어 (적/황/녹/좌회전)
+```
+
+### Editor (개발 도구)
+```
+Assets/Editor/
+└── IntersectionGenerator.cs  교차로 자동 생성 에디터 스크립트
+                               (Tools → CrossroadTwin → Generate Intersection)
+```
+
+### 문서 (하네스 지식 저장소)
+```
+Assets/docs/
+├── device-map.md            PLC 디바이스 맵 (X/Y/M/D 주소)
+├── phase timing.md          페이즈 타이밍 명세 (90초 사이클)
+└── signal spec.md           신호 체계 최종 명세 (신호기 6개)
 
 ---
 
