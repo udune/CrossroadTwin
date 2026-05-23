@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 186fa08c37651b946bc8ff1211c7eb65, type: 3}
+  m_Name: SignalConfig
+  m_EditorClassIdentifier: Assembly-CSharp::SignalConfig
+  plcIpAddress: 192.168.3.39
+  plcPort: 5007
+  pollingInterval: 0.1
+  phaseA_GreenTime: 18
+  phaseA_YellowTime: 3
+  phaseA_5ClockCrosswalk_SolidTime: 9
+  phaseA_5ClockCrosswalk_BlinkTime: 9
+  phaseB_GreenTime: 24
+  phaseB_YellowTime: 3
+  phaseB_10ClockCrosswalk_SolidTime: 15
+  phaseB_10ClockCrosswalk_BlinkTime: 9
+  phaseC_StraightTime: 39
+  phaseC_YellowTime: 3
+  phaseC_12ClockCrosswalk_SolidTime: 9
+  phaseC_12ClockCrosswalk_BlinkTime: 9
+  elderlyExtensionTime: 10
+  emergencyYellowTime: 5
+  emergencyRedBlinkTime: 10
+  noVehicleDetectionTime: 10
+  blinkInterval: 0.5
